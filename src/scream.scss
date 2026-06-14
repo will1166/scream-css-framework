@@ -10,13 +10,73 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: $primary-color;
+  padding: $spacing;
 }
 
 button {
   font-family: $font-family;
-  background: $primary-color;
   color: white;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   padding: 0.75rem 1rem;
+  cursor: pointer;
+
+  &.primary {
+    background: $primary-color;
+  }
+
+  &.secondary {
+    background: $secondary-color;
+  }
+
+  &.accent {
+    background: $accent-color;
+  }
+
+  &.success {
+    background: $success-color;
+  }
+
+  &.warning {
+    background: $warning-color;
+    color: #1f2937;
+  }
+
+  &.error {
+    background: $error-color;
+  }
+}
+
+p, a {
+    padding: $spacing;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: $spacing;
+  border: 1px solid $border-color;
+  font-family: $font-family;
+
+  thead {
+    background: $primary-color;
+    color: white;
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  th,
+  td {
+    padding: $spacing;
+    text-align: left;
+    border: 1px solid $border-color;
+  }
+
+  th {
+    font-weight: bold;
+  }
 }
