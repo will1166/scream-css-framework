@@ -1,1 +1,22 @@
-@use './variables/variables';
+@use 'variables/variables' as *;
+
+body {
+  font-family: $font-family;
+  background: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+}
+
+button {
+  font-family: $font-family;
+  background: $primary-color;
+  color: white;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 0.75rem 1rem;
+}

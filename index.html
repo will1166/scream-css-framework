@@ -1,11 +1,132 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/scream.css">
-    <title>Scream CSS Framework</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/scream.css" />
+  <title>Scream CSS Framework</title>
 </head>
 <body>
-    
+  <main>
+    <header>
+      <h1>Scream CSS Framework</h1>
+      <p>A minimal demo page for the Sass-based CSS framework.</p>
+    </header>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <h1>Heading One</h1>
+      <h2>Heading Two</h2>
+      <h3>Heading Three</h3>
+      <p>This paragraph uses the base font and text color.</p>
+      <p><strong>Bold text</strong> and <em>italic text</em>.</p>
+      <a href="#">Sample link</a>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <ul>
+        <li>Unordered list item one</li>
+        <li>Unordered list item two</li>
+        <li>Unordered list item three</li>
+      </ul>
+
+      <ol>
+        <li>Ordered list item one</li>
+        <li>Ordered list item two</li>
+        <li>Ordered list item three</li>
+      </ol>
+    </section>
+
+    <section id="buttons">
+      <h2>Buttons</h2>
+      <button type="button" class="primary">Primary</button>
+      <button type="button" class="secondary">Secondary</button>
+      <button type="button" class="accent">Accent</button>
+      <button type="button" class="success">Success</button>
+      <button type="button" class="warning">Warning</button>
+      <button type="button" class="error">Error</button>
+    </section>
+
+    <section id="forms">
+      <h2>Forms and Inputs</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Write a message"></textarea>
+
+        <label for="topic">Topic</label>
+        <select id="topic">
+          <option>Select one</option>
+          <option>General</option>
+          <option>Feedback</option>
+          <option>Support</option>
+        </select>
+
+        <button type="submit" class="primary">Submit</button>
+      </form>
+    </section>
+
+    <section id="tables">
+      <h2>Tables</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>Web Dev</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Ben</td>
+            <td>Design</td>
+            <td>B+</td>
+          </tr>
+          <tr>
+            <td>Chris</td>
+            <td>Programming</td>
+            <td>A-</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="utilities">
+      <h2>Utilities</h2>
+      <p class="primary-text">Primary text utility.</p>
+      <p class="secondary-text">Secondary text utility.</p>
+      <p class="accent-text">Accent text utility.</p>
+      <p class="success-text">Success text utility.</p>
+      <p class="warning-text">Warning text utility.</p>
+      <p class="error-text">Error text utility.</p>
+
+      <div class="primary-bg">
+        Primary background utility.
+      </div>
+
+      <div class="accent-bg">
+        Accent background utility.
+      </div>
+
+      <div class="border rounded">
+        Border and radius utility example.
+      </div>
+
+      <div class="space">
+        Spacing utility example.
+      </div>
+    </section>
+  </main>
 </body>
 </html>
