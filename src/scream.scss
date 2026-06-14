@@ -1,4 +1,4 @@
-@use 'variables/variables' as *;
+@use "./variables/variables" as *;
 
 body {
   font-family: $font-family;
@@ -57,6 +57,7 @@ table {
   margin-top: $spacing;
   border: 1px solid $border-color;
   font-family: $font-family;
+;
 
   thead {
     background: $primary-color;
