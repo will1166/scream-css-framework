@@ -4,14 +4,22 @@ $fonts: (
 );
 
 $font-size: (
-  sm: 0.875rem,
-  md: 1rem,
-  lg: 1.25rem,
-  xl: 2rem
+    'xs': 12px,
+    'sm': 15px,
+    'md': 20px,
+    'lg': 35px,
+    'xl': 55px,
+    '2xl': 75px
 );
 
 $font-weight: (
-  regular: 400,
-  bold: 700,
-  black: 900
+    'thin': 100,
+    'extralight': 200,
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'semibold': 600,
+    'bold': 700,
+    'extrabold': 800,
+    'black': 900
 );

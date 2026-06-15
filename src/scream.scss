@@ -22,10 +22,11 @@ p, a {
 
 button {
   font-family: map.get(variables.$fonts, 'body');
+  font-size: map.get(variables.$font-size, 'sm');
   color: white;
   border: 1px solid map.get(variables.$colors, 'border');
   border-radius: map.get(variables.$border-radius, 'md');
-  padding: 0.75rem 1rem;
+  padding: map.get(variables.$spacing, 'md');
   cursor: pointer;
 
   &.primary { 
