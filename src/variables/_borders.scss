@@ -1,4 +1,7 @@
 @use "./colors" as colors;
 
-$border-radius: 5px;
-$table-border: 5px solid colors.$primary-color;
+$border-radius: (
+  sm: 4px,
+  md: 6px,
+  lg: 10px
+);
