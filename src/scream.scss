@@ -28,8 +28,12 @@ button {
   padding: 0.75rem 1rem;
   cursor: pointer;
 
-  &.primary { background: map.get(variables.$colors, 'primary'); }
-  &.secondary { background: map.get(variables.$colors, 'secondary'); }
+  &.primary { 
+    background: map.get(variables.$colors, 'primary'); 
+  }
+  &.secondary { 
+    background: map.get(variables.$colors, 'secondary'); 
+  }
   &.accent { background: map.get(variables.$colors, 'accent'); }
   &.success { background: map.get(variables.$colors, 'success'); }
 
@@ -43,10 +47,14 @@ button {
   }
 }
 
+#buttons button{
+  margin: map.get(variables.$spacing, 'md');
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: map.get(variables.$spacing, 'md');
+  margin: map.get(variables.$spacing, 'md');
   border: 1px solid map.get(variables.$colors, 'border');
   font-family: map.get(variables.$fonts, 'body');
 
@@ -70,3 +78,4 @@ table {
     font-weight: bold;
   }
 }
+
