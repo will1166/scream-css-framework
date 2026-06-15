@@ -1,0 +1,40 @@
+@use "sass:map";
+@use "../variables/index.scss" as variables;
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: map.get(variables.$spacing, 'md');
+  max-width: 500px;
+  padding: map.get(variables.$spacing, 'lg');
+}
+
+label {
+  font-family: map.get(variables.$fonts, 'body');
+  color: map.get(variables.$colors, 'text');
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  font-family: map.get(variables.$fonts, 'body');
+  padding: map.get(variables.$spacing, 'md');
+  border: 1px solid map.get(variables.$colors, 'border');
+  border-radius: map.get(variables.$border-radius, 'md');
+  background: map.get(variables.$colors, 'background');
+  color: map.get(variables.$colors, 'text');
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid map.get(variables.$colors, 'primary');
+  outline-offset: 2px;
+}
+
+textarea {
+  resize: vertical;
+}

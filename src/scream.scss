@@ -1,5 +1,7 @@
 @use "sass:map";
 @use "./variables/index" as variables;
+@use "./components";
+
 
 body {
   font-family: map.get(variables.$fonts, 'body');
