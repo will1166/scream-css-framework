@@ -8,3 +8,34 @@ body {
   color: map.get(variables.$colors, 'text');
   background: map.get(variables.$colors, 'background');
 }
+
+ul,
+ol {
+  padding-left: map.get(variables.$spacing, 'lg');
+  margin-top: map.get(variables.$spacing, 'sm');
+  margin-bottom: map.get(variables.$spacing, 'md');
+}
+
+li {
+  margin-bottom: map.get(variables.$spacing, 'xs');
+  line-height: 1.5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: map.get(variables.$spacing, 'md');
+  margin-bottom: map.get(variables.$spacing, 'xl');
+}
+
+th,
+td {
+  padding: map.get(variables.$spacing, 'md');
+  border: 1px solid map.get(variables.$colors, 'border');
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: map.get(variables.$colors, 'accent');
+  color: white;
+}
