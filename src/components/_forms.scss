@@ -50,4 +50,5 @@ textarea::placeholder {
 
 button[type="submit"] {
   margin-top: map.get(variables.$spacing, 'sm');
+  text-align: center;
 }

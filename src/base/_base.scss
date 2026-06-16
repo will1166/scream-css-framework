@@ -1,19 +1,26 @@
 @use 'sass:map';
-@use '../variables/' as variables;
+@use "../variables/index" as variables;
 
 body {
   font-family: map.get(variables.$fonts, 'body');
   font-size: map.get(variables.$font-size, 'md');
-  font-weight: map.get(variables.$font-weight, 'bold');
+  font-weight: map.get(variables.$font-weight, 'regular');
   color: map.get(variables.$colors, 'text');
   background: map.get(variables.$colors, 'background');
 }
 
+strong {
+  font-weight: map.get(variables.$font-weight, 'bold');
+}
+
+em {
+  font-style: map.get(variables.$font-style, 'italic');
+}
+
 ul,
 ol {
+  margin: map.get(variables.$spacing, 'md');
   padding-left: map.get(variables.$spacing, 'lg');
-  margin-top: map.get(variables.$spacing, 'sm');
-  margin-bottom: map.get(variables.$spacing, 'md');
 }
 
 li {
@@ -21,8 +28,17 @@ li {
   line-height: 1.5;
 }
 
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
 table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin-top: map.get(variables.$spacing, 'md');
   margin-bottom: map.get(variables.$spacing, 'xl');
@@ -38,4 +54,56 @@ td {
 tbody tr:hover {
   background-color: map.get(variables.$colors, 'accent');
   color: white;
+}
+
+h1 {
+  font-size: map.get(variables.$font-size, 'xl');
+  font-weight: map.get(variables.$font-weight, 'black');
+}
+
+h2 {
+  font-size: map.get(variables.$font-size, 'lg');
+  font-weight: map.get(variables.$font-weight, 'bold');
+}
+
+h3 {
+  font-size: map.get(variables.$font-size, 'md');
+  font-weight: map.get(variables.$font-weight, 'bold');
+}
+
+p {
+  font-size: map.get(variables.$font-size, 'sm');
+  line-height: 1.6;
+}
+
+a {
+  color: map.get(variables.$colors, accent);
+  text-decoration: underline;
+  transition: color variables.$transition;
+
+  &:hover {
+    color: map.get(variables.$colors, primary);
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: variables.$focus-outline;
+    outline-offset: 2px;
+  }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all variables.$transition;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  &:focus {
+    outline: variables.$focus-outline;
+    outline-offset: 2px;
+  }
 }
