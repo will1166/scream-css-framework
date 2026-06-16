@@ -4,7 +4,7 @@
 body {
   font-family: map.get(variables.$fonts, 'body');
   font-size: map.get(variables.$font-size, 'md');
-  font-weight: map.get(variables.$font-weight, 'bold');
+  font-weight: map.get(variables.$font-weight, 'regular');
   color: map.get(variables.$colors, 'text');
   background: map.get(variables.$colors, 'background');
 }
@@ -38,4 +38,19 @@ td {
 tbody tr:hover {
   background-color: map.get(variables.$colors, 'accent');
   color: white;
+}
+
+h1 {
+  font-size: map.get(variables.$font-size, 'xl');
+  font-weight: map.get(variables.$font-weight, 'black');
+}
+
+h2 {
+  font-size: map.get(variables.$font-size, 'lg');
+  font-weight: map.get(variables.$font-weight, 'bold');
+}
+
+h3 {
+  font-size: map.get(variables.$font-size, 'md');
+  font-weight: map.get(variables.$font-weight, 'bold');
 }
