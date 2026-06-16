@@ -1,0 +1,65 @@
+@use "sass:map";
+@use "../variables/index" as variables;
+
+// Text color utilities: .text-primary, .text-secondary, etc.
+@each $name, $value in variables.$colors {
+  .text-#{$name} {
+    color: $value;
+  }
+}
+
+// Background color utilities: .bg-primary, .bg-secondary, etc.
+@each $name, $value in variables.$colors {
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
+
+// Margin and padding spacing utilities
+// Examples: .m-md, .mt-sm, .px-lg, .py-xl
+@each $name, $value in variables.$spacing {
+  .m-#{$name} { margin: $value; }
+  .mt-#{$name} { margin-top: $value; }
+  .mr-#{$name} { margin-right: $value; }
+  .mb-#{$name} { margin-bottom: $value; }
+  .ml-#{$name} { margin-left: $value; }
+  .mx-#{$name} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .my-#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .p-#{$name} { padding: $value; }
+  .pt-#{$name} { padding-top: $value; }
+  .pr-#{$name} { padding-right: $value; }
+  .pb-#{$name} { padding-bottom: $value; }
+  .pl-#{$name} { padding-left: $value; }
+  .px-#{$name} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .py-#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+// Border utilities
+.border { border: 1px solid map.get(variables.$colors, 'border'); }
+.border-0 { border: 0; }
+.border-primary { border: 1px solid map.get(variables.$colors, 'primary'); }
+.border-secondary { border: 1px solid map.get(variables.$colors, 'secondary'); }
+.border-accent { border: 1px solid map.get(variables.$colors, 'accent'); }
+.border-success { border: 1px solid map.get(variables.$colors, 'success'); }
+.border-warning { border: 1px solid map.get(variables.$colors, 'warning'); }
+.border-error { border: 1px solid map.get(variables.$colors, 'error'); }
+
+// Radius utilities: .radius-sm, .radius-md, .radius-lg
+@each $name, $value in variables.$border-radius {
+  .radius-#{$name} {
+    border-radius: $value;
+  }
+}
