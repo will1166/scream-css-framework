@@ -165,6 +165,29 @@ p {
 a {
   color: #006D77;
   text-decoration: underline;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #111827;
+  text-decoration: none;
+}
+a:focus {
+  outline: 2px solid #006D77;
+  outline-offset: 2px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+button:focus {
+  outline: 2px solid #006D77;
+  outline-offset: 2px;
 }
 
 form {
@@ -216,6 +239,7 @@ textarea::placeholder {
 
 button[type=submit] {
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .text-primary {

@@ -1,5 +1,5 @@
 @use 'sass:map';
-@use '../variables/' as variables;
+@use "../variables/index" as variables;
 
 body {
   font-family: map.get(variables.$fonts, 'body');
@@ -77,6 +77,33 @@ p {
 }
 
 a {
-  color: map.get(variables.$colors, 'accent');
+  color: map.get(variables.$colors, accent);
   text-decoration: underline;
+  transition: color variables.$transition;
+
+  &:hover {
+    color: map.get(variables.$colors, primary);
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: variables.$focus-outline;
+    outline-offset: 2px;
+  }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all variables.$transition;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  &:focus {
+    outline: variables.$focus-outline;
+    outline-offset: 2px;
+  }
 }
