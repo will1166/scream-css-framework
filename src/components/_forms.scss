@@ -38,3 +38,16 @@ select:focus {
 textarea {
   resize: vertical;
 }
+
+label {
+  margin-bottom: map.get(variables.$spacing, 'xs');
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: map.get(variables.$colors, 'secondary');
+}
+
+button[type="submit"] {
+  margin-top: map.get(variables.$spacing, 'sm');
+}
