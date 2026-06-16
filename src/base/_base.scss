@@ -9,6 +9,14 @@ body {
   background: map.get(variables.$colors, 'background');
 }
 
+strong {
+  font-weight: map.get(variables.$font-weight, 'bold');
+}
+
+em {
+  font-style: map.get(variables.$font-style, 'italic');
+}
+
 ul,
 ol {
   padding-left: map.get(variables.$spacing, 'lg');
@@ -19,6 +27,14 @@ ol {
 li {
   margin-bottom: map.get(variables.$spacing, 'xs');
   line-height: 1.5;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
 }
 
 table {
@@ -53,4 +69,9 @@ h2 {
 h3 {
   font-size: map.get(variables.$font-size, 'md');
   font-weight: map.get(variables.$font-weight, 'bold');
+}
+
+a {
+  color: map.get(variables.$colors, 'accent');
+  text-decoration: underline;
 }

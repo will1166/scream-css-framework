@@ -2,6 +2,7 @@
 @use "./variables/index" as variables;
 @use "./base";
 @use "./components";
+@use "./utilities/" as utilities;
 
 
 body {
