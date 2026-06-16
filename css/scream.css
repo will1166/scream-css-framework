@@ -105,9 +105,8 @@ em {
 
 ul,
 ol {
+  margin: 1rem;
   padding-left: 1.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 li {
@@ -125,6 +124,7 @@ ol {
 
 table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -155,6 +155,11 @@ h2 {
 h3 {
   font-size: 20px;
   font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 a {

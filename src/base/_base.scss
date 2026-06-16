@@ -19,9 +19,8 @@ em {
 
 ul,
 ol {
+  margin: map.get(variables.$spacing, 'md');
   padding-left: map.get(variables.$spacing, 'lg');
-  margin-top: map.get(variables.$spacing, 'sm');
-  margin-bottom: map.get(variables.$spacing, 'md');
 }
 
 li {
@@ -39,6 +38,7 @@ ol {
 
 table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin-top: map.get(variables.$spacing, 'md');
   margin-bottom: map.get(variables.$spacing, 'xl');
@@ -69,6 +69,11 @@ h2 {
 h3 {
   font-size: map.get(variables.$font-size, 'md');
   font-weight: map.get(variables.$font-weight, 'bold');
+}
+
+p {
+  font-size: map.get(variables.$font-size, 'sm');
+  line-height: 1.6;
 }
 
 a {
