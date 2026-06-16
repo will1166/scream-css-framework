@@ -1,0 +1,14 @@
+{
+  "name": "scream-css-framework",
+  "version": "1.0.0",
+  "description": "A custom CSS framework built with Sass.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/scream.scss css/scream.css",
+    "build": "sass src/scream.scss dist/scream.css --style=compressed --no-source-map"
+  },
+  "keywords": [],
+  "author": "Carlos Augusto Willmersdorf Franco Filho, Laura Vanesa Alifa Manzanilla, Kristen Hinojos & Maya Abdul-Ahad",
+  "license": "ISC",
+  "type": "commonjs"
+}
